@@ -12,7 +12,9 @@
 }
 #hero p {
     color: var(--second-text-color);
+    font-size: 1.25rem; /* ou 20px, ou var(--fs-lg), como preferir */
   }
+  
   #hero .content {
     z-index: 1;
     display: flex;

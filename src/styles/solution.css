@@ -22,7 +22,7 @@
     gap: 2rem;
 }
 .card {
-    background: var(--light-gray);
+    background: #f2ac38;
     box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
     max-width: 20.25rem;
     min-height: 26rem;
@@ -51,7 +51,7 @@
 }
 .card p {
     padding-inline: 1.5rem;
-    color: var(--second-text-color);
+    color: #0000;
   }
   .card hr {
     height: 6px;

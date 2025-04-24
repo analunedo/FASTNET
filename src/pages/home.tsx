@@ -11,6 +11,8 @@ import "../styles/hero.css";
 import wifi from "../assets/wifi.svg";
 import Card from "../components/card.tsx";
 import "../styles/solution.css";
+import atendimento from "../assets/atendimento.svg";
+import nuvem from "../assets/nuvem.svg";
 
 export default function Header() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -93,7 +95,7 @@ export default function Header() {
                         
                     </p>
                     <h1>O MELHOR DA FASTNET PRA VOCÊ!</h1>
-                    <p>Já pensou em matar a saudade daquela comida caseira? O melhor de tudo, nossas receitas são 100% saudáveis, bora entrar no shape.
+                    <p>Conecte-se com a melhor internet do mercado! Alta velocidade, estabilidade e planos sob medida para você navegar sem limites.
                     </p>
                     <div className="flex gap-1">
                         {/* <span><Button text="Cadastre-se" /></span> */}
@@ -106,7 +108,7 @@ export default function Header() {
             <section className="container" id="solution">
             <header>
     <span>
-        <h2>Soluções</h2>
+        <h2>Internet do seu jeito</h2>
         <span className="desktop-only">
             <h2>
                 Sob medida para você
@@ -114,31 +116,30 @@ export default function Header() {
         </span>
     </span>
     <p>
-        Inovação é com a gente! A <strong>DonaFrost </strong>
-        já conquistou diversos clientes, seja você mais um deles,
-        veja tudo que pode ganhar com nossos serviços.
+    Aqui na <strong>FastNet</strong>, internet de verdade é prioridade. 
+    Alta velocidade, suporte 24h e planos sob medida pra você navegar sem limites.
     </p>
 </header>
 <section className="even-columns">
     <div className="card">
     <Card 
-    icon={wifi}
-    title="Qualidade de Rede"
-    description="Internet recomendada"/>
+    icon={atendimento}
+    title="Atendimento 24h"
+    description="Conte com a gente a qualquer hora, todos os dias."/>
     </div>
 
     <div className="card">
     <Card 
     icon={wifi}
     title="Qualidade de Rede"
-    description="Internet recomendada"/>
+    description="Conexão estável, rápida e sem interrupções."/>
     </div>
 
     <div className="card">
     <Card 
-    icon={wifi}
-    title="Qualidade de Rede"
-    description="Internet recomendada"/>
+    icon={nuvem}
+    title="Planos Falexíveis"
+    description="Escolha o plano ideal pro seu estilo de vida — sem surpresas na fatura."/>
     </div>
 
 </section>
