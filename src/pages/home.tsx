@@ -138,7 +138,7 @@ export default function Header() {
     <div className="card">
     <Card 
     icon={nuvem}
-    title="Planos Falexíveis"
+    title="Planos Flexíveis"
     description="Escolha o plano ideal pro seu estilo de vida — sem surpresas na fatura."/>
     </div>
 
