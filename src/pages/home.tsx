@@ -2,7 +2,7 @@ import Logo from "../assets/logo.svg";
 import "../styles/header.css";
 import "../styles/utility.css";
 import Button from "../components/buttons.tsx"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Menu from "../assets/menu.svg";
 import Close from "../assets/close.svg";
 import HeroRectangleOne from "../assets/images/rectangleOne.png";
@@ -16,6 +16,13 @@ import nuvem from "../assets/nuvem.svg";
 
 export default function Header() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+    useEffect(() => {
+        const html = document.querySelector("html");
+        if (html) {
+            html.style.overflow = showMobileMenu ? "hidden" : "auto";
+        }
+    }, [showMobileMenu]);
+    
     return (
         <>
             <header className="container py-sm">
@@ -67,6 +74,10 @@ export default function Header() {
                                         <li>
                                             <a href="#contact">Contato</a>
                                         </li>
+                                        <li>  
+                                            <a onClick={() => setShowMobileMenu(false)} href="#solution">Soluções</a>
+                                        </li>
+
                                     </ul>
                                     <span onClick={() => setShowMobileMenu(!showMobileMenu)} className="btn-wrapper">
                                         <img src={Close} alt="ícone fechar menu" width={24} height={24} />
